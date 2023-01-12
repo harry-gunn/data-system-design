@@ -21,11 +21,11 @@ This is a similar streaming job that also listens to the vessel data positions k
 
 ## The 'data lake'
 
-We use the mesallion architecture to store the data here.
+We use the medallion architecture to store the data here.
 
 #### Bronze
 
-This is the raw data, stored 'as it comes' but transformed into parquet for ease. We can perform any data quality validation on this to check if the inputs are as expected (e.g. if we expect a field to be non null integer, but it is either null or a string then we would like to know about this change of schema). Each dataset is ingested here into it's own location.
+This is the raw data, stored 'as it comes' but transformed into parquet for ease. We can perform any data quality validation on this to check if the inputs are as expected (e.g. if we expect a field to be non null integer, but it is either null or a string then we would like to know about this change of schema). Each dataset is ingested here into its own location.
 
 #### Silver
 
@@ -37,7 +37,7 @@ Fully curated data, this is ready to be the source for our reports/dashboards. I
 
 #### 'Layer processing' jobs
 
-The bronze to Silver and Silver to Gold jobs take our data between the layers by transforming them and joining with other datasets. An example of a transformation to a specific gold table could be rolling data up from daily to monthly - summing some of it, averaging other parts and so on. These, as with the ingesters, are streaming jobs deployed in EKS.
+The bronze to silver and silver to gold jobs take our data between the layers by transforming them and joining with other datasets. An example of a transformation to a specific gold table could be rolling data up from daily to monthly - summing some of it, averaging other parts and so on. These, as with the ingesters, are streaming jobs deployed in EKS.
 
 ## Vessel Consumption Prediction
 
