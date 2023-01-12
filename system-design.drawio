@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-12T17:19:28.068Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="mlNBMvkuvqPmQpBSlq-k" version="20.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-12T18:01:50.366Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="gTmGnA3lgnG7Nz8uEn5h" version="20.8.5" type="github">
   <diagram id="c83rq1IKyVahyZaKWNkI" name="Page-1">
-    <mxGraphModel dx="521" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1290" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -87,7 +87,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="pxq9HLCey6L4es0OluDU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_cq7_WS7stlt5bRTaMeV-19" target="_cq7_WS7stlt5bRTaMeV-75">
+        <mxCell id="pxq9HLCey6L4es0OluDU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="_cq7_WS7stlt5bRTaMeV-19" target="_cq7_WS7stlt5bRTaMeV-75" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="260" y="610" />
@@ -227,6 +227,9 @@
         </mxCell>
         <mxCell id="_cq7_WS7stlt5bRTaMeV-78" value="Reports/ Dashboards" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;strokeWidth=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="890" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QkXfvGvhWfrW1KQ5QL39-1" value="This is an abstraction of the data lake - there will be many bronze tables (one for each source), and many silver - one which would be the vessel consumption prediciton table" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="570" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
