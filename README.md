@@ -34,3 +34,17 @@ Described as the 'Enterprise view', silver is slightly transformed data that cou
 #### Gold
 
 Fully curated data, this is ready to be the source for our reports/dashboards. It should have been transformed enough so that the dashboards need not perform any major processing themselves, ensuring they are as fast and responsive as possible.
+
+#### 'Layer processing' jobs
+
+The bronze to Silver and Silver to Gold jobs take our data between the layers by transforming them and joining with other datasets. An example of a transformation to a specific gold table could be rolling data up from daily to monthly - summing some of it, averaging other parts and so on. These, as with the ingesters, are streaming jobs deployed in EKS.
+
+## Vessel Consumption Prediction
+
+The source for this dataset is our silver layer - it provides 'good enough' data but gets it to that point very quickly. This means we are running our model on as up to date data as possible.
+
+## Dashboards
+
+The source for the dashboards are gold tables. These are heavily processed to supply as much of the data in the form it will be used in as possible - this prevents the user sitting around and waiting for the dashboard to load as it tries to transform data itself.
+I have chosen QuickSight as the dashboarding tool as it looks to play very well / easily with s3, but this can be swapped out for other dashboarding tools such as grafana if needed.
+
